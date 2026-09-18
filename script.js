@@ -12,3 +12,8 @@ if(diagram){
   diagram.style.background='#f4eadf url("assets/generated/gallery2-diagram.svg") center/cover no-repeat';
   diagram.querySelectorAll('*').forEach(el=>el.style.display='none');
 }
+const bookFair=document.querySelector('.red-type');
+if(bookFair){
+  bookFair.style.background='#f4eadf url("assets/generated/gallery2-bookfair.svg") center/cover no-repeat';
+  bookFair.querySelectorAll('*').forEach(el=>el.style.display='none');
+}
