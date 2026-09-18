@@ -6,3 +6,18 @@ const groups=[
 const host=document.querySelector('#glyphGroups'); groups.forEach(([title,str])=>{const sec=document.createElement('section');sec.className='glyph-group';const h=document.createElement('h3');h.textContent=title;sec.appendChild(h);const grid=document.createElement('div');grid.className='glyph-grid';[...str].forEach(g=>{const s=document.createElement('span');s.textContent=g;grid.appendChild(s)});sec.appendChild(grid);host.appendChild(sec)});
 const w=document.querySelector('#weight'),v=document.querySelector('#weightVal');w?.addEventListener('input',()=>{v.textContent=w.value;document.querySelector('.variable-copy').style.fontWeight=w.value>650?600:400});
 const projects=['Peppa Please','Comet',"Dickie's Ginger",'Savvi','Forma','Carlos Edelmiro']; const track=document.querySelector('#inuseTrack');projects.forEach((n,i)=>{const a=document.createElement('article');a.className='inuse-card';a.innerHTML=`<div class="inuse-art"></div><small>${i%2?'Branding · Digital':'Branding · Packaging'}</small><h3>${n}</h3>`;track.appendChild(a)});
+
+(async()=>{
+  const chunks=['assets/generated/portrait-v2-1.js','assets/generated/portrait-v2-2.js','assets/generated/portrait-v2-3.js','assets/generated/portrait-v2-4.js'];
+  for(const src of chunks){
+    await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=reject;document.head.appendChild(s)});
+  }
+  const card=document.querySelector('.portrait-b');
+  if(card&&window.__gptPortraitV2){
+    card.style.backgroundImage=`url("data:image/jpeg;base64,${window.__gptPortraitV2}")`;
+    card.style.backgroundSize='cover';
+    card.style.backgroundPosition='center';
+    card.style.backgroundRepeat='no-repeat';
+    const child=card.querySelector('span'); if(child) child.style.display='none';
+  }
+})().catch(()=>{});
