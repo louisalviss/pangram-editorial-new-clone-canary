@@ -18,7 +18,7 @@ const sectionRoots = '(page-header|cover-section|styles-section|gallery-one|samp
 for (const file of layers) {
   const css = fs.readFileSync(file,'utf8');
   const lines = css.split(/\r?\n/).length;
-  if (lines > 90) throw new Error(`${file}: too many lines (${lines} > 90)`);
+  if (lines > 65) throw new Error(`${file}: too many lines (${lines} > 65)`);
   if (/@import\b|https?:\/\/|@font-face\b/i.test(css)) throw new Error(`${file}: external resource forbidden`);
   const blocks = [...css.matchAll(new RegExp(`\\.${sectionRoots}[^,{]*\\{([^}]*)\\}`, 'gs'))];
   for (const m of blocks) {
