@@ -1,0 +1,1 @@
+GPT Image assets in this directory are generated media for bounded visual A/B canaries. They are never copied from the target site.
