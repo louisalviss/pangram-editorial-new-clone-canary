@@ -1,8 +1,14 @@
 const weights=[['Thin','100'],['Ultralight','200'],['Light','300'],['Regular','400'],['Medium','500'],['Bold','700'],['Ultrabold','800'],['Heavy','900'],['Thin Italic','100'],['Ultralight Italic','200'],['Light Italic','300'],['Italic','400'],['Medium Italic','500'],['Bold Italic','700'],['Ultrabold Italic','800'],['Heavy Italic','900']];
 const weightsEl=document.querySelector('#weights'); weights.forEach(([n,v])=>{const d=document.createElement('div');d.innerHTML=`<span>${n}</span><b>${v}</b>`;weightsEl.appendChild(d)});
 const groups=[
- ['Uppercase','ABCDEFGHIJKLMNOPQRSTUVWXYZ'],['Lowercase','abcdefghijklmnopqrstuvwxyz'],['Digits','0123456789'],['Punctuation & Symbols','.,!*#/()-\"\'$+%&:;?=><?@[]_^`'],['Latin Extended','ÁÂÄÀÅÃÆÇÐÉÊËÈÍÎÏÌÑÓÔÖÒØÕÞÚÛÜÙÝáâäàåãæçðéêëèíîïìñóôöòøõþßúûüùýÿ'],['Extended A','ĂĀĄĆČĊĎĐĚĖĒĘĞĢĠĦİĪĮĶĹĽĻŁŃŇŅŊŐŌŒŔŘŖŚŠŞŦŤŢŰŪŲŮŴŶŸŹŽŻ'],['Extended B','ȘȚșțƒƵƶƷƸƹƺƻƼƽƾƿǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜ']
+ ['Uppercase','ABCDEFGHIJKLMNOPQRSTUVWXYZ'],['Lowercase','abcdefghijklmnopqrstuvwxyz'],['Digits','0123456789'],['Punctuation & Symbols','.,!*#/()-\"\'$+%&:;?=><?@[]_^`'],['Latin Extended','ÁÂÄÀÅÃÆÇÐÉÊËÈÍÎÏÌÑÓÔÖÒØÕÞÚÛÜÙÝáâäàåãæçðéêëèíîïìñóôöòøõþßúûüùýÿ'],['Extended A','ĂĀĄĆČĊĎĚĖĒĘĞĢĠĦİĪĮĶĹĽĻŁŃŇŅŊŐŌŒŔŘŖŚŠŞŦŤŢŰŪŲŮŴŶŸŹŽŻ'],['Extended B','ȘȚșțƒƵƶƷƸƹƺƻƼƽƾƿǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜ']
 ];
 const host=document.querySelector('#glyphGroups'); groups.forEach(([title,str])=>{const sec=document.createElement('section');sec.className='glyph-group';const h=document.createElement('h3');h.textContent=title;sec.appendChild(h);const grid=document.createElement('div');grid.className='glyph-grid';[...str].forEach(g=>{const s=document.createElement('span');s.textContent=g;grid.appendChild(s)});sec.appendChild(grid);host.appendChild(sec)});
 const w=document.querySelector('#weight'),v=document.querySelector('#weightVal');w?.addEventListener('input',()=>{v.textContent=w.value;document.querySelector('.variable-copy').style.fontWeight=w.value>650?600:400});
 const projects=['Peppa Please','Comet',"Dickie's Ginger",'Savvi','Forma','Carlos Edelmiro']; const track=document.querySelector('#inuseTrack');projects.forEach((n,i)=>{const a=document.createElement('article');a.className='inuse-card';a.innerHTML=`<div class="inuse-art"></div><small>${i%2?'Branding · Digital':'Branding · Packaging'}</small><h3>${n}</h3>`;track.appendChild(a)});
+
+const diagram=document.querySelector('.diagram-a');
+if(diagram){
+  diagram.style.background='#f4eadf url("assets/generated/gallery2-diagram.svg") center/cover no-repeat';
+  diagram.querySelectorAll('*').forEach(el=>el.style.display='none');
+}
