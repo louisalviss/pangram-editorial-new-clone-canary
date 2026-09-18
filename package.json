@@ -1,0 +1,6 @@
+{
+  "name":"pangram-editorial-new-clone-canary",
+  "private":true,
+  "version":"1.0.0",
+  "scripts":{"build":"node tools/geometry-contract.mjs"}
+}
