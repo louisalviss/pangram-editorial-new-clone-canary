@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 832 688" role="img" aria-label="Book Fair typographic poster">
+  <rect width="832" height="688" fill="#f4eadf"/>
+  <g fill="#d71912" font-family="Georgia,Times New Roman,serif">
+    <text x="416" y="78" text-anchor="middle" font-size="54" font-weight="700">MoMA</text>
+    <text x="74" y="105" font-size="18"><tspan x="74" dy="0">155 Plymouth St.</tspan><tspan x="74" dy="21">Brooklyn, New York</tspan><tspan x="74" dy="21">11201</tspan></text>
+    <text x="758" y="105" text-anchor="end" font-size="18"><tspan x="758" dy="0">155 Plymouth St.</tspan><tspan x="758" dy="21">Brooklyn, New York</tspan><tspan x="758" dy="21">11201</tspan></text>
+    <text x="416" y="345" text-anchor="middle" font-size="190" font-weight="400" letter-spacing="-16">BOOK</text>
+    <text x="416" y="565" text-anchor="middle" font-size="205" font-weight="400" letter-spacing="-10">FAIR</text>
+    <circle cx="351" cy="287" r="58" fill="none" stroke="#d71912" stroke-width="4"/>
+    <circle cx="405" cy="287" r="58" fill="none" stroke="#d71912" stroke-width="4"/>
+  </g>
+</svg>
