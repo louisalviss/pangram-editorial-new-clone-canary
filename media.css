@@ -1,1 +1,47 @@
-/* Orca layer: intentionally empty baseline. */
+/* Cover section — cream/black/red editorial specimen */
+.cover-section .cover-art {
+  background: #e9dfd2;
+  border-top: 2px solid #000;
+}
+.cover-section .cover-word {
+  color: #000;
+  letter-spacing: -.06em;
+}
+.cover-section .cover-word.italic {
+  color: #b5120f;
+}
+.cover-section .cover-mark {
+  color: #000;
+  opacity: .72;
+}
+.cover-section .cover-small {
+  color: #000;
+  letter-spacing: .24em;
+}
+.cover-section .cover-rule {
+  border-top-color: #000;
+  opacity: .14;
+}
+
+/* Gallery one — restrained editorial specimen cards */
+.gallery-one .media-card {
+  background: #e9dfd2;
+}
+.gallery-one .portrait-a {
+  background: linear-gradient(180deg, #e9dfd2 0 62%, #111 62%);
+  color: #b5120f;
+}
+.gallery-one .portrait-a span {
+  color: #000;
+}
+.gallery-one .portrait-a:before {
+  color: #b5120f;
+  opacity: .6;
+}
+.gallery-one .portrait-b {
+  background: linear-gradient(180deg, #c4b5a5 0 50%, #0a0a0a 50%);
+  color: #f0e6d8;
+}
+.gallery-one .portrait-b span {
+  color: #f0e6d8;
+}
