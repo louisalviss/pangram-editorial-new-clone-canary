@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1000" role="img" aria-label="Italic construction diagram">
+  <rect width="840" height="1000" fill="#f4eadf"/>
+  <g fill="#db1712" stroke="#db1712">
+    <text x="420" y="235" text-anchor="middle" font-family="Georgia,Times New Roman,serif" font-style="italic" font-weight="700" font-size="46" stroke="none">HandCrafted Italics</text>
+    <text x="90" y="311" font-family="Georgia,Times New Roman,serif" font-size="20" stroke="none">Cap Height</text>
+    <text x="90" y="438" font-family="Georgia,Times New Roman,serif" font-size="20" stroke="none">x-Height</text>
+    <text x="90" y="710" font-family="Georgia,Times New Roman,serif" font-size="20" stroke="none">Baseline</text>
+    <g fill="none" stroke-width="1.5" stroke-dasharray="3 3" opacity=".95">
+      <path d="M85 318H760"/><path d="M85 445H760"/><path d="M85 685H760"/>
+      <path d="M728 310V748"/><path d="M575 745L730 314"/>
+    </g>
+    <text x="693" y="343" font-family="Georgia,Times New Roman,serif" font-size="20" stroke="none">17°</text>
+    <text x="100" y="685" font-family="Georgia,Times New Roman,serif" font-size="500" font-weight="400" font-style="italic" fill="none" stroke="#db1712" stroke-width="1.6">A</text>
+    <text x="405" y="690" font-family="Georgia,Times New Roman,serif" font-size="360" font-weight="400" font-style="italic" fill="none" stroke="#db1712" stroke-width="1.6">a</text>
+  </g>
+</svg>
