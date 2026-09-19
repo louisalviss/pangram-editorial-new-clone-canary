@@ -102,3 +102,39 @@
   .round-menu{position:absolute;right:16px;top:17px;width:22px!important;height:16px!important;padding:0!important;border:0!important;border-radius:0!important;background:linear-gradient(#000,#000) 0 2px/22px 1.2px no-repeat,linear-gradient(#000,#000) 0 8px/22px 1.2px no-repeat,linear-gradient(#000,#000) 0 14px/22px 1.2px no-repeat!important;font-size:0!important}
   .page-header-left h1{font-size:64px!important;line-height:60px!important;transform:translateY(-5px) scaleX(1.01)!important}
 }
+
+/* R11 terminal first-viewport corrections. */
+@media(max-width:749px){
+  #hero h1{font-family:"Editorial New Live",serif!important;font-size:60px!important;line-height:60px!important;font-weight:300!important;letter-spacing:normal!important;transform:none!important;margin:0 0 21.1601px!important;text-align:center!important}
+  #hero .page-header-left p{width:100%!important;max-width:none!important;margin:0!important;font-family:"Neue Montreal Live",Arial,sans-serif!important;font-size:15.7504px!important;line-height:20.4755px!important;text-align:center!important}
+  #hero .page-header-right{padding-top:21.14px!important}
+  #hero .try-note{font-family:"Neue Montreal Live",Arial,sans-serif!important;font-size:15.7504px!important;line-height:20.4755px!important}
+  .cover-art{background-position:center 56.3%!important}
+}
+
+/* R11 sampler metrics taken from live computed styles at 412x915. */
+@media(max-width:749px){
+  .sampler-panel:nth-child(1) .sample-display{top:118px!important;font-family:"Editorial New Live",serif!important;font-size:76.8151px!important;font-weight:300!important;font-style:normal!important;line-height:76.8151px!important;letter-spacing:normal!important}
+  .sampler-panel:nth-child(2) .sample-headline{top:116px!important;font-family:"Editorial New Live",serif!important;font-size:43.9561px!important;font-weight:300!important;font-style:italic!important;line-height:43.9561px!important;letter-spacing:normal!important}
+  .sampler-panel:nth-child(3) .sample-copy{top:119px!important;font-family:"Editorial New Live",serif!important;font-size:19.8595px!important;font-weight:300!important;font-style:italic!important;line-height:23.8314px!important;letter-spacing:normal!important}
+  .sampler-panel:nth-child(4) .sample-copy{top:120px!important;font-family:"Editorial New Live",serif!important;font-size:13.2877px!important;font-weight:300!important;font-style:normal!important;line-height:19.9316px!important;letter-spacing:normal!important}
+}
+
+/* R11 sampler variable-axis parity. */
+@media(max-width:749px){
+  .sampler-panel .sample-text,.sampler-panel .sample-copy{left:28.21px!important;right:28.21px!important}
+  .sampler-panel:nth-child(1) .sample-display{font-variation-settings:"wght" 800!important}
+  .sampler-panel:nth-child(2) .sample-headline{font-variation-settings:"wght" 500!important}
+  .sampler-panel:nth-child(3) .sample-copy{font-variation-settings:"wght" 200!important}
+  .sampler-panel:nth-child(4) .sample-copy{font-variation-settings:"wght" 400!important}
+}
+
+/* R11 feature cards + variable axis parity. */
+@media(max-width:749px){
+  .features-section>.wrap{padding-top:18px!important}
+  .features-grid{margin-top:15px!important;display:grid!important;grid-template-columns:1fr!important;gap:14px!important}
+  .features-grid article{position:relative;height:103px!important;border:0!important;border-radius:20px;background:#ededed;padding:0!important;overflow:hidden}
+  .features-grid article h3{position:absolute;left:50%;top:14px;transform:translateX(-50%);margin:0;padding:4px 12px;border-radius:999px;background:#ff2f00;color:#000;white-space:nowrap;font:400 11px/14px "Neue Montreal Live",Arial,sans-serif!important}
+  .features-grid article>p:not(.muted-lig){position:absolute;left:0;right:0;top:49px;margin:0!important;text-align:center;font:300 31px/36px "Editorial New Live",serif!important;font-variation-settings:"wght" 300!important}
+  .features-grid .muted-lig{display:none!important}
+}
