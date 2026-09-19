@@ -120,3 +120,11 @@
   .buy-help p{position:static;height:auto!important;margin:35px 0!important;background:transparent;color:#000;padding:0;font:inherit}
   .buy-help p:after{content:none}
 }
+
+/* Mobile geometry r4: fresh live A at 412x915. */
+@media(max-width:749px){
+  .variable-section{height:251.8px;overflow:visible}
+  .sampler-section{height:1795px}
+  .sampler-stack{height:100%;padding-top:0;grid-template-rows:468px 249px 376px 650px;gap:14px;overflow:visible}
+  .info-section{height:1296.1px}
+}
