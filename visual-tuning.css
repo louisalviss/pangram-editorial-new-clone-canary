@@ -1,1 +1,15 @@
-/* Orca layer: intentionally empty baseline. */
+/* Mobile first viewport visual parity; bounded to header/hero/cover/styles. */
+@media(max-width:749px){
+  .round-menu{width:28.2px;height:28.2px;border-radius:20px;font-size:0;position:relative}
+  .round-menu:before{content:"";position:absolute;left:8px;top:9px;width:10px;height:1px;background:#000;box-shadow:0 4px 0 #000}
+  .button-row{gap:14px}
+  .outline-btn{width:145.9px;padding:0}
+  .dark-btn{width:128px;padding:0;background:#ff2f00;color:#000;border-color:#ff2f00}
+  .cover-art{width:92vw;height:335.4px;margin:0 auto;transform:translateY(-30.3px);background-position:center 52%!important}
+  .styles-layout{padding-top:21.16px}
+  .styles-intro{display:flex;justify-content:space-between;align-items:flex-start}
+  .styles-intro h2{margin:0;width:auto}
+  .style-count{margin:0;width:auto}
+  .weights{margin-top:40px}
+  .weights>div:nth-child(n){height:62px;padding:0 21.1px}
+}
