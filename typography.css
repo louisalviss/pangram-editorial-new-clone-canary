@@ -28,3 +28,20 @@
   #hero h1{font-family:"Editorial New Live",serif!important;font-weight:400!important;letter-spacing:-.035em!important;transform:none!important}
   .variable-copy,.glyph-grid span{font-family:"Editorial New Live",serif!important}
 }
+
+/* R11: exact live sans face + first-viewport metric lock. */
+@font-face{
+  font-family:"Neue Montreal Live";
+  src:url("assets/live/neue-montreal-var.woff2") format("woff2");
+  font-style:normal;
+  font-weight:1 999;
+  font-display:swap;
+}
+:root{--sans:"Neue Montreal Live",Arial,sans-serif}
+body,button,input{font-family:"Neue Montreal Live",Arial,sans-serif}
+@media(max-width:749px){
+  #hero h1{font-family:"Editorial New Live",serif!important;font-size:60px!important;line-height:60px!important;font-weight:300!important;letter-spacing:normal!important;transform:none!important;margin:0 0 21.1601px!important;text-align:center!important}
+  #hero p{width:100%!important;max-width:none!important;margin:0!important;font-family:"Neue Montreal Live",Arial,sans-serif!important;font-size:15.7504px!important;line-height:20.4755px!important;text-align:center!important}
+  #hero .outline-btn,#hero .dark-btn{font-family:"Neue Montreal Live",Arial,sans-serif!important;font-size:17.7184px!important;font-weight:530!important;border-radius:20px!important}
+  #hero .try-note{font-family:"Neue Montreal Live",Arial,sans-serif!important;font-size:15.7504px!important;line-height:20.4755px!important}
+}
