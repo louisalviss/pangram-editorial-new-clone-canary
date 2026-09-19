@@ -1,1 +1,9 @@
-/* Orca layer: intentionally empty baseline. */
+/* Mobile first-viewport typography parity. */
+@media(max-width:749px){
+  #hero h1{font-family:Didot,"Bodoni 72","Bodoni Moda",Georgia,serif;font-weight:300;letter-spacing:normal}
+  #hero p{font-size:15.7504px;line-height:20.4755px}
+  .outline-btn,.dark-btn{font-size:17.7184px;font-weight:500;line-height:normal}
+  .styles-intro h2,.style-count{font-family:"Helvetica Neue",Arial,sans-serif;font-size:17.7184px;line-height:23.0339px;font-weight:600;letter-spacing:normal}
+  .weights>div span{font-family:Didot,"Bodoni 72","Bodoni Moda",Georgia,serif;font-size:22.4256px;line-height:29.1533px}
+  .weights>div b{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12.4448px;line-height:16.1782px;font-weight:600;color:#ff2f00}
+}
