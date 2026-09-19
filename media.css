@@ -5,3 +5,6 @@
 /* GPT Image gallery-one left-card canary: standalone poster only. */
 .portrait-a{background:#e10800 url("assets/generated/gallery1-red.jpg") center/cover no-repeat!important}
 .portrait-a>*{display:none!important}
+/* GPT Image gallery-one right-card portrait v2 canary. */
+.portrait-b{background:#b79a7d url("assets/generated/gallery1-portrait-v2.jpg") center/cover no-repeat!important}
+.portrait-b>*{display:none!important}
