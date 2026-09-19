@@ -50,3 +50,20 @@
   .buy-help p{margin:0;background:#ededed;color:#000;padding:28.2px}.buy-help p:first-child{height:190.41px}.buy-help p:last-child{height:154.03px}
   .inuse-section,.inuse-track{overflow:hidden}.site-footer{height:1950.45px;margin-top:144.85px}
 }
+
+
+/* Footer density/style parity from fresh extractor evidence. */
+.site-footer{background:transparent;color:#000;display:block;padding:0 4vw 96px}
+.footer-card{height:100%;background:#ededed;padding:24px;display:flex;flex-direction:column;overflow:hidden}
+.footer-menu{display:grid;grid-template-columns:repeat(7,1fr);gap:20px;font:400 14px/25.7px var(--sans)}
+.footer-menu>div{display:flex;flex-direction:column}.footer-menu b{font-weight:600;margin-bottom:8px}.footer-menu a{display:block}
+.footer-news{margin:80px 0 0 auto;width:40%;font-size:14px}.footer-news p{margin:0 0 20px}
+.footer-signup{height:64px;border:1px solid #000;display:flex;align-items:center;justify-content:space-between;padding-left:16px}.footer-signup button{width:64px;height:62px;border:0;border-left:1px solid #000;background:transparent;font-size:22px}
+.footer-bottom{margin-top:auto;border-top:1px solid #000;padding-top:20px;display:flex;justify-content:space-between;align-items:flex-end}.footer-bottom strong{font:500 58px/.9 var(--sans)}
+@media(max-width:749px){
+  .site-footer{padding:0 4vw 96.84px;background:transparent;color:#000}
+  .footer-card{height:1853.61px;padding:14.11px}
+  .footer-menu{grid-template-columns:repeat(3,1fr);gap:26px 14px;line-height:25.25px}
+  .footer-menu b{margin-bottom:7px}.footer-news{margin:80px 0 0;width:100%}.footer-signup{height:58px}
+  .footer-bottom{display:block;padding-top:18px}.footer-bottom strong{display:block;font-size:36px;margin-bottom:12px}
+}
