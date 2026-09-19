@@ -8,3 +8,6 @@
 /* GPT Image gallery-one right-card portrait v2 canary. */
 .portrait-b{background:#b79a7d url("assets/generated/gallery1-portrait-v2.jpg") center/cover no-repeat!important}
 .portrait-b>*{display:none!important}
+/* GPT Image gallery-two left-card canary: standalone typographic specimen only. */
+.diagram-a{background:#f3efe7 url("assets/generated/gallery2-left-r1.jpg") center/cover no-repeat!important}
+.diagram-a>*{display:none!important}
