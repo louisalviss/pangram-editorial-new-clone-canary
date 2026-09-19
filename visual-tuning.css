@@ -13,3 +13,12 @@
   .weights{margin-top:40px}
   .weights>div:nth-child(n){height:62px;padding:0 21.1px}
 }
+@media(max-width:749px){
+  .variable-layout{position:relative;transform:translateY(-31px);height:251.8px!important;background:#000;color:#fff;padding:14.1064px!important;overflow:hidden}
+  .variable-layout .section-label{display:block;position:absolute;left:50%;top:14.1px;transform:translateX(-50%);margin:0;padding:4px 11.05px;background:#ff2f00;color:#000;border-radius:20px;font:400 12.4448px/14.5181px "Helvetica Neue",Arial,sans-serif;white-space:nowrap;z-index:2}
+  .variable-copy{position:absolute;left:48.8px;top:71.7px;width:281.4px;height:100.3px;margin:0!important;font-family:"Cormorant Garamond",Didot,"Bodoni 72",Georgia,serif!important;font-size:45.6097px!important;line-height:50.1707px!important;font-weight:400!important;letter-spacing:normal!important;color:#fff}
+  .variable-copy br{display:none}.variable-copy em{display:block;font-style:italic}
+  .weight-control{display:flex!important;position:absolute!important;left:14.1px!important;right:14.1px!important;bottom:14.1px!important;height:30.7px!important;margin:0!important;padding:7.27px 14.53px!important;border:0!important;border-radius:999px;background:#fafafa;color:#000;align-items:center;gap:14px;grid-template-columns:none!important}
+  .weight-control span,.weight-control b{font:400 12.4448px/16.1782px "Helvetica Neue",Arial,sans-serif;color:#000}
+  .weight-control span{font-weight:500}.weight-control input{flex:1;width:auto!important;height:1px;accent-color:#9d968e}
+}
