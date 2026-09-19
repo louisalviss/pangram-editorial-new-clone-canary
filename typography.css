@@ -7,3 +7,24 @@
   .weights>div span{font-family:Didot,"Bodoni 72","Bodoni Moda",Georgia,serif;font-size:22.4256px;line-height:29.1533px}
   .weights>div b{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12.4448px;line-height:16.1782px;font-weight:600;color:#ff2f00}
 }
+
+/* R10: use the same public Editorial New variable fonts served by the live source. */
+@font-face{
+  font-family:"Editorial New Live";
+  src:url("assets/live/editorial-new-var.woff2") format("woff2");
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Editorial New Live";
+  src:url("assets/live/editorial-new-italic-var.woff2") format("woff2");
+  font-style:italic;
+  font-weight:100 900;
+  font-display:swap;
+}
+:root{--serif:"Editorial New Live","Bodoni Moda",Georgia,serif}
+@media(max-width:749px){
+  #hero h1{font-family:"Editorial New Live",serif!important;font-weight:400!important;letter-spacing:-.035em!important;transform:none!important}
+  .variable-copy,.glyph-grid span{font-family:"Editorial New Live",serif!important}
+}
