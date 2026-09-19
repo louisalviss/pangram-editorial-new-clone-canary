@@ -138,3 +138,10 @@
   .features-grid article>p:not(.muted-lig){position:absolute;left:0;right:0;top:49px;margin:0!important;text-align:center;font:300 31px/36px "Editorial New Live",serif!important;font-variation-settings:"wght" 300!important}
   .features-grid .muted-lig{display:none!important}
 }
+
+/* R12 microsite text metrics from live target. */
+@media(max-width:749px){
+  .micro-card h2{left:14.1px!important;right:14.1px!important;top:104px!important;font-family:"Editorial New Live",serif!important;font-size:56.135px!important;font-weight:300!important;line-height:56.135px!important;letter-spacing:normal!important}
+  .micro-card>div:first-child>p:not(.section-label){left:14.1px!important;right:14.1px!important;top:231px!important;font-family:"Neue Montreal Live",Arial,sans-serif!important;font-size:14.4px!important;line-height:18.72px!important}
+  .micro-card .light-btn{left:94.25px!important;top:270px!important;width:190.53px!important;height:30.09px!important;font-family:"Neue Montreal Live",Arial,sans-serif!important;font-size:14px!important;line-height:normal!important}
+}
