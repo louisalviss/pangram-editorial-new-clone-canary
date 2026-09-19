@@ -128,3 +128,65 @@
   .sampler-stack{height:100%;padding-top:0;grid-template-rows:468px 249px 376px 650px;gap:14px;overflow:visible}
   .info-section{height:1296.1px}
 }
+
+
+/* Mobile visual parity r5: gallery 3/4, info cards, in-use carousel. */
+.info-primary{display:contents}
+@media(max-width:749px){
+  .gallery-three-grid .media-card:first-child{height:416px;border-radius:20px;background:#f2e8de;color:#d90000}
+  .gallery-three-grid .media-card:last-child{height:540px;border-radius:20px;background:#d90000;color:#f2e8de}
+  .fashion-a span{position:absolute;inset:0;font-size:0}
+  .fashion-a span:before{content:"ffi";position:absolute;left:-22px;top:38px;font:500 italic 330px/.72 var(--serif);letter-spacing:-.11em;color:#d90000}
+  .fashion-a span:after{content:"Ligatures";position:absolute;left:28px;top:78px;font:500 9px/1 var(--serif);color:#d90000}
+  .fashion-a:after{content:"ffi ffl fl § @ C° ST LTD";position:absolute;right:28px;bottom:70px;font:500 italic 14px/1 var(--serif);color:#d90000}
+  .fashion-b span{position:absolute;inset:0;font-size:0;text-align:center}
+  .fashion-b span:before{content:"Aglio e Olio\A Pecorino Romano\A Cacio e Pepe\A San Marzano\A Grana Padano\A Melanzana\A Salsiccia\A Peperoncini";white-space:pre-line;position:absolute;left:18px;right:18px;top:102px;font:500 38px/.93 var(--serif);letter-spacing:-.035em;color:#f2e8de}
+
+  .detail-a{border-radius:20px;background:linear-gradient(180deg,#fafafa 0 43%,#dbe7ee 58%,#f7f7f4 100%);overflow:hidden}
+  .detail-a:before{content:"";position:absolute;left:205px;top:-8px;width:26px;height:420px;border:0;background:linear-gradient(90deg,#d4d1c8,#8c8f8e 55%,#c9c8c3);z-index:0}
+  .detail-a:after{content:"";position:absolute;left:57px;right:45px;top:286px;height:42px;border:0;background:repeating-linear-gradient(0deg,#4b4b47 0 3px,transparent 3px 10px);transform:skewX(-14deg);opacity:.85;z-index:1}
+  .detail-a b{position:absolute;left:69px;top:34px;width:245px;height:238px;display:block;background:#f2f2ee;border:2px solid #777;box-shadow:7px 8px 0 rgba(0,0,0,.18);transform:rotate(-2deg);font-size:0;z-index:2}
+  .detail-a b:before{content:"Open";position:absolute;left:24px;top:48px;font:500 italic 72px/.8 var(--serif);letter-spacing:-.08em;color:#d90000}
+  .detail-a b:after{content:"Seven to Nine\A O'clock";white-space:pre-line;position:absolute;left:82px;top:125px;font:700 27px/.82 var(--serif);letter-spacing:-.06em;color:#d90000;text-align:center}
+  .detail-b{border-radius:20px;background:#f2e8de;color:#d90000}
+  .detail-b span{position:absolute;inset:0;left:0;top:0;font-size:0;text-align:center}
+  .detail-b span:before{content:"Happy\A Hour?";white-space:pre-line;position:absolute;left:35px;right:35px;top:86px;font:500 73px/.78 var(--serif);letter-spacing:-.055em;color:#d90000}
+  .detail-b span:after{content:"This font is free to try!";position:absolute;left:30px;right:30px;top:300px;font:500 italic 24px/1 var(--serif);color:#d90000}
+
+  .info-layout{padding-top:0!important;display:block}
+  .info-primary{display:block;height:452px;padding:28px 14px 22px;background:#000;color:#fff;border-radius:20px;overflow:hidden}
+  .info-primary h2{margin:0!important;font:600 32px/32px var(--sans);max-width:330px}
+  .info-primary .info-copy{display:block;margin-top:18px;font:400 14px/18.2px var(--sans);color:#fff}
+  .info-primary .info-copy p{margin:0 0 18px}
+  .info-primary .info-copy:after{content:"The heavier weights bring stronger statements while the curves and italics keep the family expressive and versatile.";display:block;margin-top:0}
+  .meta-list{margin:14px 0 0!important;border:0!important}
+  .meta-list>div{display:block!important;border:0!important;padding:14px!important;margin:0!important}
+  .meta-list dt{color:#000!important;font:600 12px/16px var(--sans)}
+  .meta-list dd{color:#000;margin:18px 0 0!important}
+  .meta-list>div:nth-child(1){height:131px;background:#ff2f00;border-radius:20px}
+  .meta-list>div:nth-child(1) dd{font:400 20px/29px var(--sans)}
+  .meta-list>div:nth-child(2){height:191px;margin-top:14px!important;background:#ededed;border-radius:20px}
+  .meta-list>div:nth-child(2) dd{font-size:0}
+  .meta-list>div:nth-child(2) dd:before{content:"Italics\A Serif\A Variable";white-space:pre-line;font:600 36px/39px var(--sans);letter-spacing:-.04em}
+  .meta-list>div:nth-child(3){height:116px;margin-top:14px!important;background:#ededed;border-radius:20px 20px 0 0;padding-bottom:0!important}
+  .meta-list>div:nth-child(3) dd{font:600 36px/40px var(--sans);letter-spacing:-.04em;margin-top:14px!important}
+  .meta-list>div:nth-child(3) dd:after{content:"16 Styles with 463 Glyphs each · Including Italics";display:block;margin-top:12px;font:400 12px/16px var(--sans);letter-spacing:0}
+  .meta-list>div:nth-child(4){height:146px;background:#ededed;border-radius:0 0 20px 20px;padding-top:22px!important}
+  .meta-list>div:nth-child(4) dd{font:600 36px/40px var(--sans);letter-spacing:-.04em;margin-top:12px!important}
+  .meta-list>div:nth-child(4) dd:after{content:"Latest update: July 2019";display:block;margin-top:12px;font:400 12px/16px var(--sans);letter-spacing:0}
+  .meta-list>div:nth-child(5){display:none!important}
+
+  .inuse-section>.wrap{padding-top:0}
+  .inuse-section .section-line{height:44px;border:0;padding:0;align-items:flex-start;font-size:14px}
+  .inuse-section .section-line b{padding-top:8px}
+  .inuse-section .section-line span{height:31px;padding:7px 14px 0;border:1px solid #000;border-radius:999px;font-size:12px;white-space:nowrap}
+  .inuse-track{position:relative;display:flex;grid-template-columns:none;gap:16px;margin-top:16px;overflow:visible;transform:translateX(20px)}
+  .inuse-track:before{content:"";position:absolute;left:-36px;top:0;width:20px;height:272px;border-radius:0 18px 18px 0;background:linear-gradient(180deg,#bcb8ad,#7e7467 55%,#d9d4cc);z-index:2}
+  .inuse-card{position:relative;flex:0 0 340px}
+  .inuse-art{height:272px;border-radius:20px;overflow:hidden;background:linear-gradient(105deg,#e2ddd3 0 59%,#9c6b56 59% 100%)!important;box-shadow:inset 0 -75px 0 rgba(35,28,24,.18)}
+  .inuse-card:first-child .inuse-art:before{content:"Real estate, but\A not ‘real estate.’";white-space:pre-line;position:absolute;left:18px;top:72px;font:500 26px/.92 var(--serif);color:#3a302a;opacity:.82}
+  .inuse-card:first-child .inuse-art:after{content:"View project";position:absolute;left:112px;bottom:14px;width:116px;height:31px;border-radius:999px;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;font:400 14px var(--sans)}
+  .inuse-card:first-child:before{content:"Savvi";position:absolute;left:0;top:15px;width:340px;text-align:center;color:#fff;font:400 20px var(--sans);z-index:4}
+  .inuse-card small,.inuse-card h3{display:none}
+  .inuse-section:after{content:"● ● ● ● ● ●";display:block;text-align:center;margin-top:12px;font-size:10px;letter-spacing:2px;color:#c9c9c9}
+}
