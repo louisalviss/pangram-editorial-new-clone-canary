@@ -20,7 +20,7 @@
 <header class="site-header">
   <a class="brand" href="#">Pangram Pangram <span class="desktop-only">Foundry</span></a>
   <nav class="desktop-nav"><a>All fonts</a><a>Font starter pack</a><a>Font in use</a><a>Academy</a><a>Support</a></nav>
-  <button class="round-menu" aria-label="Menu">↗</button>
+  <span class="bag-icon" aria-hidden="true"></span><button class="round-menu" aria-label="Menu">Menu</button>
 </header>
 <main>
   <section class="page-header" id="hero">
@@ -99,7 +99,7 @@
 
   <section class="glyph-section" id="glyphs">
     <div class="wrap glyph-wrap">
-      <div class="glyph-mobile-head"><h4>Glyphs</h4><select aria-label="Glyph style"><option>Thin</option><option>Light</option><option>Regular</option><option>Medium</option><option>Bold</option><option>Heavy</option><option>Italic</option></select></div>
+      <div class="glyph-mobile-head"><h4>Glyphs set overview</h4><select aria-label="Glyph style"><option>Light</option><option>Thin</option><option>Regular</option><option>Medium</option><option>Bold</option><option>Heavy</option><option>Italic</option></select></div>
       <div class="glyph-controls"><span>Thin</span><span>Ultralight</span><span>Light</span><span>Regular</span><span>Medium</span><span>Bold</span><span>Ultrabold</span><span>Heavy</span><span>Italic</span></div>
       <div id="glyphGroups"></div>
     </div>
@@ -149,22 +149,32 @@
   </section>
 
   <section class="pairings-section">
-    <div class="wrap"><div class="section-line"><b>Editorial New pairs well with these typefaces.</b><span>View all fonts</span></div><div class="pairing-grid"><article><b>Editorial Old</b><span>16 styles + Variable cut</span><strong>Aa</strong></article><article><b>Editorial Sans</b><span>16 styles + Variable cut</span><strong>Aa</strong></article><article><b>Neue Montreal</b><span>36 styles + Variable cut</span><strong>Aa</strong></article><article><b>Watch</b><span>9 styles + Variable cuts</span><strong>Aa</strong></article></div></div>
+    <div class="wrap"><div class="section-line"><b>Editorial New pairs well with these typefaces.</b><span>View all fonts</span></div><div class="pairing-grid"><article><b>Editorial Old</b><span>16 styles + Variable cut<br>Including Italics</span><strong>Aa</strong></article><article><b>Editorial Sans</b><span>16 styles + Variable cut<br>Including True Italics</span><strong>Aa</strong></article><article class="pairing-update"><b>Neue Montreal</b><span>36 styles + Variable cut<br>Including Italics &amp; Text</span><strong>Aa</strong></article><article><b>Watch</b><span>9 styles + Variable cuts</span><strong>Aa</strong></article></div></div>
   </section>
 </main>
 <footer class="site-footer"><div class="footer-card">
-  <div class="footer-menu">
-    <div><b>Fonts</b><a>All Fonts</a><a>Serif</a><a>Sans Serif</a><a>Display</a><a>Mono</a><a>Variable</a><a>Starter Pack</a></div>
-    <div><b>Explore</b><a>Font in Use</a><a>New Releases</a><a>Best Sellers</a><a>Collections</a><a>Pairings</a><a>Type Tester</a></div>
-    <div><b>Studio</b><a>Custom Type</a><a>Brand Systems</a><a>Licensing</a><a>Enterprise</a><a>Education</a><a>Partners</a></div>
-    <div><b>Learn</b><a>Academy</a><a>Journal</a><a>Type Notes</a><a>Guides</a><a>Glossary</a><a>FAQ</a></div>
-    <div><b>Support</b><a>Help Center</a><a>Contact</a><a>Downloads</a><a>Updates</a><a>Desktop App</a><a>Account</a></div>
-    <div><b>Social</b><a>Instagram</a><a>Are.na</a><a>Behance</a><a>YouTube</a><a>LinkedIn</a><a>Newsletter</a></div>
-    <div><b>Legal</b><a>EULA</a><a>Privacy</a><a>Terms</a><a>Cookies</a><a>Accessibility</a><a>Credits</a></div>
+  <img class="footer-logo" src="assets/live/ppfoundry.svg" alt="Pangram Pangram Foundry">
+  <section class="footer-allfonts"><b>All Fonts</b><div class="footer-font-columns">
+    <div><a>Frama</a><a>Kyoto</a><a>Watch</a><a>Museum</a><a>Model</a><a>Lettra Mono</a><a>Valve</a><a>Neue Corp</a><a>Editorial Sans</a><a>Playground</a><a>Nikkei</a><a>Gatwick</a><a>Talisman</a><a>Right Grotesk Mono</a><a>Right Serif Mono</a><a>Pangaia</a><a>Neue Montreal Mono</a><a>Hatton</a><a>Air</a></div>
+    <div><a>Editorial Old</a><a>Fragment</a><a>Neue Montreal Arabic</a><a>Right Didone</a><a>Right Serif</a><a>Right Slab</a><a>Acma</a><a>Writer</a><a>Telegraf</a><a>Neue Machina</a><a>Mori</a><a>Right Sans</a><a>Formula</a><a>Rader</a><a>Neue Montreal</a><a>Neue World</a><a>Radio Grotesk</a><a>Eiko</a><a>Pangram Sans</a><a>Editorial New</a></div>
+    <div><a>Migra</a><a>Pangram Sans Rounded</a><a>Agrandir</a><a>Right Gothic</a><a>Supply</a><a>Monument</a><a>Right Grotesk</a><a>Fraktion</a><a>Bitmap Font Pack</a><a>Object Sans</a><a>Cirka</a><a>Grafier</a><a>Gosha Sans</a><a>Woodland</a><a>Fuji Sans</a><a>Stellar Sans</a><a>Pier Sans</a><a>Charlevoix Pro</a><a>Casa Stencil</a><a>Chronos Serif</a></div>
+  </div></section>
+  <div class="footer-links-grid">
+    <section><b>Support</b><a>Contact us</a><a>Font Licenses</a><a>Free To Try</a><a>FAQs</a><a>EULA</a></section>
+    <section><b>More PP®F</b><a>All Fonts</a><a>Font Starter Pack</a><a>Font in use</a><a>Academy</a><a>About Us</a></section>
+    <section><b>About us</b><a>Expertise</a><a>Clients</a><a>Team</a></section>
+    <section><b>From the Lab</b><a>Inspiration</a><a>Latest Playlist</a></section>
+    <section><b>Follow us</b><a>Instagram</a><a>Twitter</a><a>YouTube</a></section>
+    <section></section>
+    <section><b>Microsites</b><a>Frama</a><a>Fragment</a><a>Editorial New</a></section>
+    <section><b>Account</b><a>Login</a><a>Create account</a><a class="footer-cart">Cart <sup>0</sup></a></section>
+    <section><b>Powered by us</b><a>Off Type Foundry</a><a>Playground Goods</a><a>Font Starter Pack</a><a>TypeTrials®</a></section>
+    <section><b>Français</b></section>
   </div>
-  <div class="footer-news"><p>News, type releases and studio updates.</p><div class="footer-signup"><span>Email address</span><button>→</button></div></div>
-  <div class="footer-bottom"><strong>Pangram Pangram</strong><span>Independent type foundry · © 2018–2026</span></div>
-</div></footer>
+  <section class="footer-news"><b>Don't miss a beat</b><p>Subscribe to our newsletter to stay in touch with the latest.</p><div class="footer-signup"><span>Email address</span><button>→</button></div></section>
+  <div class="footer-payments"><span>Pay</span><span class="paypal">PayPal</span><span class="mastercard">●●</span><span>VISA</span></div>
+  <div class="footer-copyright">Copyright © 2018 – 2026. All rights reserved.</div>
+</div><div class="footer-outside"><p>Pangram Pangram® Foundry<br>Created by Mat Desjardins and the team.</p><b>↑ Back to top</b></div></footer>
 <script src="script.js"></script>
 </body>
 </html>
