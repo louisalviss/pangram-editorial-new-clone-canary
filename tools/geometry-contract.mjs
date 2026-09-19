@@ -19,7 +19,11 @@ for (const file of layers) {
   const css = fs.readFileSync(file,'utf8');
   const lines = css.split(/\r?\n/).length;
   if (lines > 65) throw new Error(`${file}: too many lines (${lines} > 65)`);
-  if (/@import\b|https?:\/\/|@font-face\b/i.test(css)) throw new Error(`${file}: external resource forbidden`);
+  if (/@import\b|https?:\/\//i.test(css)) throw new Error(`${file}: external resource forbidden`);
+  for (const u of css.matchAll(/url\([\"\']?([^\)\"\']+)/gi)) {
+    const ref = u[1].trim();
+    if (ref.startsWith('//') || ref.includes('..')) throw new Error(`${file}: unsafe resource reference ${ref}`);
+  }
   const blocks = [...css.matchAll(new RegExp(`\\.${sectionRoots}[^,{]*\\{([^}]*)\\}`, 'gs'))];
   for (const m of blocks) {
     if (/\b(?:height|min-height|max-height|margin-top)\s*:/i.test(m[2])) throw new Error(`${file}: section geometry override forbidden for ${m[1]}`);
